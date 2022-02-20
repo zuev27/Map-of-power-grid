@@ -2,8 +2,8 @@
 Создание карт-схем на Python с помощью folium и geojson
 ## Доступно 2 вида карт:
 
-1. [С расположением ЛЭП (Мошенское)] (https://github.com/zuev27/Map-of-power-grid/tree/main/%D0%9C%D0%BE%D1%88%D0%B5%D0%BD%D1%81%D0%BA%D0%BE%D0%B5.html)
-2. [Без расположения ЛЭП (Олонецкий РЭС)] (https://github.com/zuev27/Map-of-power-grid/tree/main/%D0%9E%D0%BB%D0%BE%D0%BD%D0%B5%D1%86%D0%BA%D0%B8%D0%B9%20%D0%A0%D0%AD%D0%A1.html).
+1. [С расположением ЛЭП (Мошенское)](https://github.com/zuev27/Map-of-power-grid/tree/main/%D0%9C%D0%BE%D1%88%D0%B5%D0%BD%D1%81%D0%BA%D0%BE%D0%B5.html)
+2. [Без расположения ЛЭП (Олонецкий РЭС)](https://github.com/zuev27/Map-of-power-grid/tree/main/%D0%9E%D0%BB%D0%BE%D0%BD%D0%B5%D1%86%D0%BA%D0%B8%D0%B9%20%D0%A0%D0%AD%D0%A1.html)
 
 ## Для корректной работы необходимо наличие следующих библиотек:
 ```

@@ -1,5 +1,5 @@
 # Map-of-power-grid
-Создание карт-схем на Python с помощью folium и geojson.
+Создание карт-схем на Python с помощью folium и geojson
 ## Доступно 3 вида карт:
 
 1. [С расположением ЛЭП (Мошенское)](https://github.com/zuev27/Map-of-power-grid/tree/main/%D0%9C%D0%BE%D1%88%D0%B5%D0%BD%D1%81%D0%BA%D0%BE%D0%B5);

@@ -41,7 +41,6 @@ with open('nodes.geojson', 'w', encoding='cp1251') as f:
 
 #Для объектов генерации
 data_gen = pd.read_excel('Перечень ЭС.xlsx')
-
 features_gen = data_gen.apply(
     lambda row: Feature(properties = {'name':row['Название ЭС'],
                                       'address':row['Место расположения, адрес']},
@@ -63,8 +62,8 @@ layer = folium.GeoJson(
 
 layer_gen = folium.GeoJson(
     feature_collection_gen,
-    name='Generation',
-    show=False
+    name = 'Электростанции',
+    show = False
 ).add_to(layer)
 
 
@@ -82,21 +81,18 @@ for feature in gj.data['features']:
         popup = folium.Popup(feature['properties']['name'] + '</br>Адрес: ' + feature['properties']['address'], max_width=250),
                         ).add_to(marker_cluster)
 
-
-gj_gen = folium.GeoJson('gen.geojson')
 for feature in gj_gen.data['features']:
     icon = BeautifyIcon(
-        icon='adjust',
-        inner_icon_style='color:black;font-size:30px;',
-        background_color='transparent',
-        border_color='transparent',
+        icon = 'adjust',
+        inner_icon_style = 'color:black;font-size:30px;',
+        background_color = 'transparent',
+        border_color = 'transparent',
     )
     folium.Marker(
-        location=list(reversed(feature['geometry']['coordinates'])),
-        icon=icon,
-        popup=folium.Popup(feature['properties']['name'] + '</br>Адрес: ' + feature['properties']['address'], max_width=250),
+        location = list(reversed(feature['geometry']['coordinates'])),
+        icon = icon,
+        popup = folium.Popup(feature['properties']['name'] + '</br>Адрес: ' + feature['properties']['address'], max_width=250),
     ).add_to(marker_cluster)
-
 
 #####################################################################################################################################################
 #Добавление названий на карту (БЕЗ МАРКЕРОВ)

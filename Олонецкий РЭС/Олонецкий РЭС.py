@@ -21,7 +21,10 @@ def color_change(Unom):
   if Unom not in U:
       return 'black'
   return Unom_colors[Unom]
+
+
 ###Экспорт данных в GeoJson для использования в картах
+
 #Добавление узлов ПС на карту
 data = pd.read_excel('Перечень ПС.xlsx')
 features = data.apply(
